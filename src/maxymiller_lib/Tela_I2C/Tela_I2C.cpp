@@ -1,4 +1,4 @@
-#include "maxymiller_lib/Tela_I2C.h"
+#include <maxymiller_lib/Tela_I2C.h>
 
 Tela_I2C::Tela_I2C(
   int LCD,
