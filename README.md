@@ -1,5 +1,5 @@
 # arduino_tela
 
 ```
-    arduino-libraries/LiquidCrystal
+#include <maxymiller_lib/Tela.h>
 ```
