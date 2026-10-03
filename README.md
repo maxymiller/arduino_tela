@@ -12,7 +12,7 @@ Para usar a classe `Tela`, que trabalha com LCD paralelo usando `LiquidCrystal`.
 
 ---
 
-## Tela
+## Tela_I2C
 
 ```
 #include <maxymiller_lib/Tela_I2C.h>
