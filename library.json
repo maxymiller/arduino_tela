@@ -1,0 +1,24 @@
+{
+  "name": "Tela",
+  "version": "1.0.0",
+  "description": "Biblioteca para controlar uma matriz de displays LCD",
+  "keywords": [
+    "ESP32",
+    "LCD",
+    "LiquidCrystal"
+  ],
+  "authors": [
+    {
+      "name": "maxymiller"
+    }
+  ],
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "espressif32"
+  ],
+  "dependencies": {
+    "arduino-libraries/LiquidCrystal": "^1.0.7"
+  }
+}
