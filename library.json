@@ -20,5 +20,6 @@
   ],
   "dependencies": {
     "arduino-libraries/LiquidCrystal": "^1.0.7"
+    "marcoschwartz/LiquidCrystal_I2C": "^1.1.4"
   }
 }
