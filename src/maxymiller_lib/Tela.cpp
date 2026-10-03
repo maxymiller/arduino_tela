@@ -1,4 +1,3 @@
-//#include "maxymiller_lib/Tela.h"
 #include <maxymiller_lib/Tela.h>
 
 Tela::Tela(
