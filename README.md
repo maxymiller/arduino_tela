@@ -10,6 +10,19 @@
 
 Para usar a classe `Tela`, que trabalha com LCD paralelo usando `LiquidCrystal`.
 
+```
+Tela tela(
+  /* LCD inicial */
+  12, 11, 5, 4, 3, 2,
+
+  /* tamanho de cada LCD */
+  16, 2,
+
+  /* quantidade de LCDs */
+  2, 2
+);
+```
+
 ---
 
 ## Tela_I2C
@@ -19,5 +32,18 @@ Para usar a classe `Tela`, que trabalha com LCD paralelo usando `LiquidCrystal`.
 ```
 
 Para usar a classe `Tela_I2C`, que trabalha com LCD I²C usando `LiquidCrystal_I2C`.
+
+```
+Tela_I2C tela(
+  /* LCD inicial */
+  0x27,
+
+  /* tamanho de cada LCD */
+  16, 2,
+
+  /* quantidade de LCDs */
+  2, 2
+);
+```
 
 ---
