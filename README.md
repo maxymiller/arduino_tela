@@ -10,6 +10,8 @@
 
 Para usar a classe `Tela`, que trabalha com LCD paralelo usando `LiquidCrystal`.
 
+Exemplo:
+
 ```
 Tela tela(
   /* LCD inicial */
@@ -32,6 +34,8 @@ Tela tela(
 ```
 
 Para usar a classe `Tela_I2C`, que trabalha com LCD I²C usando `LiquidCrystal_I2C`.
+
+Exemplo:
 
 ```
 Tela_I2C tela(
