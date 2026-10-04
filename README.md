@@ -36,7 +36,7 @@ Exemplo:
 
 ```
 Tela_I2C tela(
-/* tamanho de cada LCD */
+  /* tamanho de cada LCD */
   16, 2,
 
   /* quantidade de LCDs */
@@ -58,10 +58,10 @@ Exemplo:
 
 ```
 Tela_SSD1306_oled tela(
-/* tamanho de cada LCD */
+  /* tamanho de cada OLED */
   10, 4,
 
-  /* quantidade de LCDs */
+  /* quantidade de OLEDs */
   2, 2
 );
 ```
