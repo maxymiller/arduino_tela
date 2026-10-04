@@ -59,7 +59,7 @@ Exemplo:
 ```
 Tela_SSD1306_oled tela(
 /* tamanho de cada LCD */
-  16, 2,
+  10, 4,
 
   /* quantidade de LCDs */
   2, 2
