@@ -345,3 +345,10 @@ void Tela_SSD1306_oled::setCursor(int oledTela, int x, int y) {
 void Tela_SSD1306_oled::nextCursor(int oledTela, int x, int y) {
   cursor_blink(oledTela, x*12, (y*16)+14);
 }
+void Tela_SSD1306_oled::desenharia_pixels(int tela_oled, int x_a, int y_a, int x_b, int y_b, boolean tela_pixels_on) {
+  if(tela_pixels_on) {
+    oled[tela_oled]->drawLine(x_a, y_a, x_b, y_b, SSD1306_WHITE);
+  }else{
+    oled[tela_oled]->drawLine(x_a, y_a, x_b, y_b, SSD1306_BLACK);
+  }
+}
