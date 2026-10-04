@@ -58,9 +58,6 @@ Exemplo:
 
 ```
 Tela_SSD1306_oled tela(
-  /* tamanho de cada OLED */
-  10, 4,
-
   /* quantidade de OLEDs */
   2, 2
 );
