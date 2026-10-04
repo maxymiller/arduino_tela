@@ -145,7 +145,7 @@ void Tela_SSD1306_oled::add(
     Wire.begin(OLED_SDA, OLED_SCL);
 
     if (!oled[TELA_USER]->begin(SSD1306_SWITCHCAPVCC, OLED)) {
-      while (true) {
+      for(int i = 0; i < 10; i++) {
         delay(1000);
       }
     }
