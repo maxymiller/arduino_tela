@@ -55,7 +55,7 @@ public:
   void cursor_ligar(boolean tipo);
   void cursor_desligar();
   boolean cursor_esta_ligado();
-  void desenharia_pixels(int tela_oled, int x_a, int y_a, int x_b, int y_b);
+  void desenharia_pixels(int tela_oled, int x_a, int y_a, int x_b, int y_b, boolean tela_pixels_on);
 };
 
 #endif
