@@ -6,7 +6,10 @@
     "ESP32",
     "LCD",
     "LiquidCrystal",
-    "LiquidCrystal_I2C"
+    "LiquidCrystal_I2C",
+    "SSD1306",
+    "OLED",
+    "0.96"
   ],
   "authors": [
     {
