@@ -195,7 +195,7 @@ void Tela_SSD1306_oled::escrever(String texto, int linha) {
           );
 
         setCursor(indice, 0, linhaLCD);
-        nextCursor(indice, parte.length());
+        nextCursor(indice, parte.length(), linhaLCD);
         oled[indice]->print(parte);
         oled[indice]->display();
       }
@@ -226,7 +226,7 @@ void Tela_SSD1306_oled::escrever(String texto, int linha) {
         );
 
       setCursor(indice, 0, linhaLCD);
-      nextCursor(indice, parte.length());
+      nextCursor(indice, parte.length(), linhaLCD);
       oled[indice]->print(parte);
       oled[indice]->display();
     }
@@ -342,6 +342,6 @@ void Tela_SSD1306_oled::setCursor(int oledTela, int x, int y) {
   cursor_blink(oledTela, x*12, (y*16)+14);
   oled[oledTela]->setCursor(x*12, y*16);
 }
-void Tela_SSD1306_oled::nextCursor(int oledTela, int x) {
-  cursor_blink(oledTela, x*12, CURSOR_Y);
+void Tela_SSD1306_oled::nextCursor(int oledTela, int x, int y) {
+  cursor_blink(oledTela, x*12, (y*16)+14);
 }
