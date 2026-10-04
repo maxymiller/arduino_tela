@@ -1,13 +1,13 @@
 #include <maxymiller_lib/Tela_SSD1306_oled.h>
 
 Tela_SSD1306_oled::Tela_SSD1306_oled(
-  int x, int y, int tela_total_do_x, int tela_total_do_y
+  int tela_total_do_x, int tela_total_do_y
 ) {
   TELA_X_X = tela_total_do_x;
   TELA_X_Y = tela_total_do_y;
 
-  TELA_X = x*TELA_X_X;
-  TELA_Y = y*TELA_X_Y;
+  TELA_X = 10*TELA_X_X;
+  TELA_Y = 4*TELA_X_Y;
 
   oled = new Adafruit_SSD1306*[TELA_X_X*TELA_X_Y]{};
   //add(OLED, OLED_SDA, OLED_SCL);
