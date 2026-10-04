@@ -43,7 +43,7 @@ private:
   void limpa(int linha);
 public:
   Tela_SSD1306_oled(
-    int x, int y, int tela_total_do_x, int tela_total_do_y
+    int tela_total_do_x, int tela_total_do_y
   );
 
   void ligar();
