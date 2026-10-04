@@ -35,7 +35,7 @@ private:
   boolean CURSOR_BLINK = false;
   void cursor_blink(int oledTela, int x, int y);
   void setCursor(int oledTela, int x, int y);
-  void nextCursor(int oledTela, int x);
+  void nextCursor(int oledTela, int x, int y);
 
   int CURSOR_X;
   int CURSOR_Y;
