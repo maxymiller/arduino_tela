@@ -14,9 +14,6 @@ Exemplo:
 
 ```
 Tela tela(
-  /* LCD inicial */
-  12, 11, 5, 4, 3, 2,
-
   /* tamanho de cada LCD */
   16, 2,
 
@@ -39,10 +36,29 @@ Exemplo:
 
 ```
 Tela_I2C tela(
-  /* LCD inicial */
-  0x27,
+/* tamanho de cada LCD */
+  16, 2,
 
-  /* tamanho de cada LCD */
+  /* quantidade de LCDs */
+  2, 2
+);
+```
+
+---
+
+## Tela_SSD1306_oled
+
+```
+#include <maxymiller_lib/Tela_SSD1306_oled.h>
+```
+
+Para usar a classe `Tela_SSD1306_oled`, que trabalha com OLED I²C usando `Adafruit GFX Library` e `adafruit/Adafruit SSD1306`.
+
+Exemplo:
+
+```
+Tela_SSD1306_oled tela(
+/* tamanho de cada LCD */
   16, 2,
 
   /* quantidade de LCDs */
