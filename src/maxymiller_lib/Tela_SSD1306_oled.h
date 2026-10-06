@@ -50,7 +50,7 @@ public:
   void ligar();
   void loop();
   void add(
-    uint8_t OLED, int OLED_SDA, int OLED_SCL
+    int OLED_I2C, int OLED_SDA, int OLED_SCL
   );
   void escrever(String texto, int linha);
   void cursor_ligar(boolean tipo);
