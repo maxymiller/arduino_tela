@@ -124,7 +124,7 @@ void Tela_I2C::loop() {
 }
 
 void Tela_I2C::add(
-  int LCD
+  int LCD_I2C
 ) {
 
   int telaTotal = TELA_X_X * TELA_X_Y;
@@ -134,7 +134,7 @@ void Tela_I2C::add(
   if(TELA_USER < telaTotal) {
 
     lcd[TELA_USER] = new LiquidCrystal_I2C(
-      LCD, telaX, telaY
+      LCD_I2C, telaX, telaY
     );
 
     TELA_USER++;
