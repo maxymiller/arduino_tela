@@ -332,7 +332,7 @@ void Tela_SSD1306_oled::cursor_blink(int oledTela, int x, int y) {
         }
       }
     }else{
-      if(cursor_ligado) {
+      if(cursor_ligado && !CURSOR_LINE_BIG) {
         for(int i = 0; i < TELA_X/TELA_X_Y; i++) {
           oled[oledTela]->drawLine(x+i, y - 14, x+i, y-1, SSD1306_BLACK);
         }
