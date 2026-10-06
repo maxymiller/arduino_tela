@@ -149,10 +149,11 @@ void Tela_SSD1306_oled::add(
 
     Wire.begin(OLED_SDA, OLED_SCL);
 
-    if (!oled[TELA_USER]->begin(SSD1306_SWITCHCAPVCC, OLED)) {
-      for(int i = 0; i < 10; i++) {
-        delay(1000);
+    for(int i = 0; i < 10; i++) {
+      if (oled[TELA_USER]->begin(SSD1306_SWITCHCAPVCC, OLED)) {
+        break;
       }
+      delay(1000);
     }
 
     oled[TELA_USER]->setTextSize(2);
