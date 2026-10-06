@@ -32,7 +32,7 @@ public:
   void ligar();
   void loop();
   void add(
-    int LCD
+    int LCD_I2C
   );
   void escrever(String texto, int linha);
   void limpa(int linha);
