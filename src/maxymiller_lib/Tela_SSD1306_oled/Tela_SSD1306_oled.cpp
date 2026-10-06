@@ -132,7 +132,7 @@ void Tela_SSD1306_oled::loop() {
 }
 
 void Tela_SSD1306_oled::add(
-  uint8_t OLED,
+  int OLED_I2C,
   int OLED_SDA,
   int OLED_SCL
 ) {
@@ -150,7 +150,7 @@ void Tela_SSD1306_oled::add(
     Wire.begin(OLED_SDA, OLED_SCL);
 
     for(int i = 0; i < 10; i++) {
-      if (oled[TELA_USER]->begin(SSD1306_SWITCHCAPVCC, OLED)) {
+      if (oled[TELA_USER]->begin(SSD1306_SWITCHCAPVCC, OLED_I2C)) {
         break;
       }
       delay(1000);
