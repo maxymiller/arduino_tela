@@ -1,4 +1,4 @@
-#include <maxymiller_lib copy/Tela.h>
+#include <maxymiller_lib/Tela.h>
 
 Tela::Tela(
   int x, int y, int tela_total_do_x, int tela_total_do_y
