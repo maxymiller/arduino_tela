@@ -59,6 +59,33 @@ void Tela_SSD1306_oled::ligar() {
   for(int i = 0; i < telaTotal; i++) {
     oled[i]->display();
   }
+  delay(500);
+  for(int i = 0; i < TELA_USER; i++) {
+    oled[i]->clearDisplay();
+    oled[i]->setCursor(0, 0);
+    oled[i]->println("LIGADO");
+    oled[i]->setTextSize(1);
+    oled[i]->println("CODIGO DE TELA");
+    oled[i]->println("DO GITHUB");
+    oled[i]->println("DO MAXYMILLER");
+
+    int maxymiller_avata_x = -5;
+    desenharia_pixels(i, 112+maxymiller_avata_x, 63, 121+maxymiller_avata_x, 63, true);
+    for(int j = 0; j < 2; j++) {
+      desenharia_pixels(i, (116+j)+maxymiller_avata_x, 62, (116+j)+maxymiller_avata_x, 53, true);
+      desenharia_pixels(i, (112+(j*9))+maxymiller_avata_x, 62, (112+(j*9))+maxymiller_avata_x, 53, true);
+      desenharia_pixels(i, (111+(j*10))+maxymiller_avata_x, 52, (111+(j*10))+maxymiller_avata_x, 43, true);
+      desenharia_pixels(i, (112+(j*10))+maxymiller_avata_x, 52, (112+(j*10))+maxymiller_avata_x, 43, true);
+
+      desenharia_pixels(i, (107+(j*19))+maxymiller_avata_x, 52, (107+(j*19))+maxymiller_avata_x, 44, true);
+
+      desenharia_pixels(i, (107)+maxymiller_avata_x, 53-(j*10), (126)+maxymiller_avata_x, 53-(j*10), true);
+    }
+    desenharia_pixels(i, (113)+maxymiller_avata_x, 44, (120)+maxymiller_avata_x, 52, true);
+
+    oled[i]->display();
+    oled[i]->setTextSize(2);
+  }
 }
 
 void Tela_SSD1306_oled::loop() {
