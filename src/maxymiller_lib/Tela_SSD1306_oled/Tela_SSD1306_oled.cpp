@@ -1,4 +1,4 @@
-#include <maxymiller_lib copy/Tela_SSD1306_oled.h>
+#include <maxymiller_lib/Tela_SSD1306_oled.h>
 
 Tela_SSD1306_oled::Tela_SSD1306_oled(
   int tela_total_do_x, int tela_total_do_y
