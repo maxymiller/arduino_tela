@@ -52,7 +52,7 @@ Tela_I2C tela(
 #include <maxymiller_lib/Tela_SSD1306_oled.h>
 ```
 
-Para usar a classe `Tela_SSD1306_oled`, que trabalha com OLED I²C usando `Adafruit GFX Library` e `adafruit/Adafruit SSD1306`.
+Para usar a classe `Tela_SSD1306_oled`, que trabalha com OLED I²C usando `Adafruit GFX Library` e `Adafruit SSD1306`.
 
 Exemplo:
 
