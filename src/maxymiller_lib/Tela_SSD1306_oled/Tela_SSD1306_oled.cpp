@@ -69,19 +69,37 @@ void Tela_SSD1306_oled::ligar() {
     oled[i]->println("DO GITHUB");
     oled[i]->println("DO MAXYMILLER");
 
-    int maxymiller_avata_x = -5;
+    int maxymiller_avata_x = 0;
     desenharia_pixels(i, 112+maxymiller_avata_x, 63, 121+maxymiller_avata_x, 63, true);
     for(int j = 0; j < 2; j++) {
       desenharia_pixels(i, (116+j)+maxymiller_avata_x, 62, (116+j)+maxymiller_avata_x, 53, true);
       desenharia_pixels(i, (112+(j*9))+maxymiller_avata_x, 62, (112+(j*9))+maxymiller_avata_x, 53, true);
-      desenharia_pixels(i, (111+(j*10))+maxymiller_avata_x, 52, (111+(j*10))+maxymiller_avata_x, 43, true);
-      desenharia_pixels(i, (112+(j*10))+maxymiller_avata_x, 52, (112+(j*10))+maxymiller_avata_x, 43, true);
+      desenharia_pixels(i, (111+(j*10))+maxymiller_avata_x, 52, (111+(j*10))+maxymiller_avata_x, 45, true);
+      desenharia_pixels(i, (112+(j*10))+maxymiller_avata_x, 52, (112+(j*10))+maxymiller_avata_x, 45, true);
 
       desenharia_pixels(i, (107+(j*19))+maxymiller_avata_x, 52, (107+(j*19))+maxymiller_avata_x, 44, true);
 
-      desenharia_pixels(i, (107)+maxymiller_avata_x, 53-(j*10), (126)+maxymiller_avata_x, 53-(j*10), true);
+      desenharia_pixels(i, (107)+maxymiller_avata_x, 53-(j*9), (126)+maxymiller_avata_x, 53-(j*9), true);
+
+      desenharia_pixels(i, (118-j)+maxymiller_avata_x, 49-j, (120)+maxymiller_avata_x, 49-j, true);
+      desenharia_pixels(i, (116+j)+maxymiller_avata_x, 48, (116+j)+maxymiller_avata_x, 45, true);
+
+      desenharia_pixels(i, (113)+maxymiller_avata_x, 45+j, (120-j)+maxymiller_avata_x, 52, true);
+
+      desenharia_pixels(i, (107+(j*15))+maxymiller_avata_x, 48, (110+(j*15))+maxymiller_avata_x, 48, true);
+      desenharia_pixels(i, (107+(j*15))+maxymiller_avata_x, 46, (110+(j*15))+maxymiller_avata_x, 46, true);
+
+      desenharia_pixels(i, (113-(j*4))+maxymiller_avata_x, 43-(j*11), (120+(j*4))+maxymiller_avata_x, 43-(j*11), true);
+      desenharia_pixels(i, (112+(j*9))+maxymiller_avata_x, 42, (112+(j*9))+maxymiller_avata_x, 22, true);
+      desenharia_pixels(i, (113)+maxymiller_avata_x, 22, (120)+maxymiller_avata_x, 22, true);
+      desenharia_pixels(i, (113)+maxymiller_avata_x, 28+j, (120)+maxymiller_avata_x, 28+j, true);
+
+      desenharia_pixels(i, (115+(j*3))+maxymiller_avata_x, 35, (114+(j*3))+maxymiller_avata_x, 36, true);
+      desenharia_pixels(i, (119-(j*3))+maxymiller_avata_x, 36, (119-(j*3))+maxymiller_avata_x, 36, true);
+
+      desenharia_pixels(i, (118-(j*3))+maxymiller_avata_x, 40, (118-(j*3))+maxymiller_avata_x, 40, true);
+      desenharia_pixels(i, (116)+maxymiller_avata_x, 41, (117)+maxymiller_avata_x, 41, true);
     }
-    desenharia_pixels(i, (113)+maxymiller_avata_x, 44, (120)+maxymiller_avata_x, 52, true);
 
     oled[i]->display();
     oled[i]->setTextSize(2);
