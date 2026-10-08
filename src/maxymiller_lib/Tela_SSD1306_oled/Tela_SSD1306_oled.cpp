@@ -67,7 +67,8 @@ void Tela_SSD1306_oled::ligar() {
     oled[i]->setTextSize(1);
     oled[i]->println("CODIGO DE TELA");
     oled[i]->println("DO GITHUB");
-    oled[i]->println("DO MAXYMILLER");
+    oled[i]->println("CRIADO POR");
+    oled[i]->println("MAXYMILLER");
 
     int maxymiller_avata_x = 0;
     desenharia_pixels(i, 112+maxymiller_avata_x, 63, 121+maxymiller_avata_x, 63, true);
