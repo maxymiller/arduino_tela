@@ -119,10 +119,10 @@ void Tela_SSD1306_oled::ligar() {
 void Tela_SSD1306_oled::tarefaLoop(void *parameter) {
     Tela_SSD1306_oled *tela = static_cast<Tela_SSD1306_oled *>(parameter);
 
-    if (tela == nullptr) {
+    /*if (tela == nullptr) {
         vTaskDelete(nullptr);
         return;
-    }
+    }*/
 
     while (true) {
         tela->loop();
