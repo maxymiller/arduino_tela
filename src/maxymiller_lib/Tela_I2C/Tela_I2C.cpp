@@ -211,6 +211,7 @@ void Tela_I2C::escrever(String texto, int linha) {
 
   // Escrever em uma linha específica
   } else if(linha > 0 && linha <= TELA_Y) {
+    limpa(linha);
 
     int linhaGlobal = linha - 1;
 
